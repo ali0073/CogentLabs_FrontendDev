@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body onload="checkCookies">
+    <!--start -->
+    <p id="demo">Hello</p>
+
+    <h1 id="myName">Ali</h1>
+
+    <form name="myform" action="" onsubmit="return formValidation()">
+      <input type="text" name="fname" />
+      <input type="button" value="Submit" onclick="formValidation()" />
+    </form>
+
+    <br />
+    <br />
+    <!-- Button styling - changing CSS -->
+    <button
+      id="btn1"
+      onclick="document.getElementById('myName').style.color = 'red' "
+    >
+      Button
+    </button>
+
+    <br />
+    <br />
+
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+  </body>
+
+  <script>
+    // .getElementById is use to get select the element
+    // document.getElementById('demo').innerHTML = 'Hello World!';
+    // another way
+    // const element = getElementById('demo');
+    // element.innerHTML = 'Hello World';
+
+    // by tag name
+    document
+      .getElementsByTagName("p")[0]
+      .addEventListener("click", function () {
+        console.log("Hello");
+      });
+
+    // event Listener's
+    document.getElementById("demo").onclick = function () {
+      console.log("Pressed");
+    };
+
+    // to returns a list of all <p> elements with class="intro"
+    // document.querySelectorAll('p.intro');
+
+    // functions for validation of obove form
+    function formValidation() {
+      console.log("Inside the function");
+      const a = document.forms["myform"]["fname"].value;
+      // console.log(document.forms['myform']['fname']);
+      console.log(a);
+      if (a === "") {
+        console.log("Fill the field");
+      }
+    }
+
+    // txt change color
+    function changeText(id) {
+      id.innerHTML = "Amazing!";
+    }
+
+    // Coockies checker
+    function checkCookies() {
+      var text = "";
+      if (navigator.cookieEnabled == true) {
+        text = "Cookies are enabled.";
+      } else {
+        text = "Cookies are not enabled.";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+</html>
