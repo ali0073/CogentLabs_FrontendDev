@@ -1,4 +1,3 @@
-
 **16th MAY**
 I learned the difference between single thread and multithread. I found JS is single thread and how we can make it multi-thread with the help of event loop.
 I learned about Asynchronus language. Js is synchronous and to make it Asynchronus, we need to use callbacks.
@@ -58,16 +57,16 @@ fetch practice
 JSX and its practice ( only saw what JSX does behind the scene and how Translipers convert the code into HTML)
 Closures --> Ability of a function to remember it's lexicle context
 
->> SOLID PRINCIPLE:
-Single Responsibilty => every class should have only one function/thing.
-Open Closed => only inherit the func from parent class that was needed.
-Liskov Subsitution => every derived class should be substitutable for its parent class.
-Interface Segregation => create new interface and then let your class implement multiple interfaces as needed.
-Dependencies Inversion => high level modules should not depend upon low level modules - make tree.
-CSS intoructions
-Specificity
-Selectors
-Syntax about classes and ids and tags
+> > SOLID PRINCIPLE:
+> > Single Responsibilty => every class should have only one function/thing.
+> > Open Closed => only inherit the func from parent class that was needed.
+> > Liskov Subsitution => every derived class should be substitutable for its parent class.
+> > Interface Segregation => create new interface and then let your class implement multiple interfaces as needed.
+> > Dependencies Inversion => high level modules should not depend upon low level modules - make tree.
+> > CSS intoructions
+> > Specificity
+> > Selectors
+> > Syntax about classes and ids and tags
 
 **22th MAY**
 What is CSS?
@@ -76,7 +75,7 @@ Methods For Adding CSS
 Color (all 3 methods)
 CSS Selectors
 Colors in CSS
-Web Safe Fonts (sizes, weights, and height) 
+Web Safe Fonts (sizes, weights, and height)
 Class and Id
 Box Model, Margin and Padding, and Borders
 Text Formatting Styles
@@ -88,7 +87,7 @@ Setting Images As Element Background
 
 **23th MAY**
 What is React?
-Setting Up the Development Environment 
+Setting Up the Development Environment
 Creating a React App -> Vite
 Project Structure
 Creating a React Component
@@ -103,9 +102,12 @@ Passing Data Via Props
 Passing Functions Via Props
 State Vs Props
 
-**24th MAY**
+**24th MAy**
+Practice for all the thing i did on 23th May
+
+**25th MAY**
 Hooks
 Use-State
 Higher Order Component
 Passing Children to the Components and why
-we do this considering the usecase of HOC */
+we do this considering the usecase of HOC \*/
