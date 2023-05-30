@@ -118,3 +118,7 @@ Practise all the things i did on 25th May
 **29th May**
 Created a react project:
 in which previous learned topics are covered such as useStat, props, etc.
+
+**30TH May**
+Created a react project:
+in which I learned about the Routes.
