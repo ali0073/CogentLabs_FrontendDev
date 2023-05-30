@@ -111,3 +111,10 @@ Use-State
 Higher Order Component
 Passing Children to the Components and why
 we do this considering the usecase of HOC \*/
+
+**26th May**
+Practise all the things i did on 25th May
+
+**29th May**
+Created a react project:
+in which previous learned topics are covered such as useStat, props, etc.
