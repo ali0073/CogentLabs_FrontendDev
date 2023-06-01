@@ -122,3 +122,79 @@ in which previous learned topics are covered such as useStat, props, etc.
 **30TH May**
 Created a react project:
 in which I learned about the Routes.
+
+**31th May**
+
+**1st May**
+
+**Why Do We Need to Use the REACT STATE?**
+
+Problem:
+We are manipulating individual pieces of UI that work very well in very small tasks but it becomes difficult to manage in complex projects.
+
+Solution:
+React introduces States - we can describe the different states that our component can be in, and switch between them in response to the user.
+
+How we have to think in React while using State…
+
+1. Think about your component each visual states
+i-e: empty -> typing -> submitting -> success or error
+
+2. On what trigger for above visuals, state changes
+
+3. Time to declare the state in the memory
+	First try to write must have states
+	Then, try to make all visuals state
+
+4. Think and remove duplicates
+
+5. At the end, connect event handlers to set the states
+
+**Best Practices for Structuring State**
+
+Structuring the State well is always beneficial while modifying and debugging.
+
+Here are some best practices to use:
+
+. If two state variables always change together, it might be a good idea to unify them into a single state variable. 
+
+For example, (x and y axis) of the mouse cursor are changed at the same time, if you create separate states for each, it might not be a good practice. You can merge them in one like:
+
+Const [position, setPosition] = useState({x:0, y:0});
+
+. Avoid contradiction in State:
+
+Like using isSent and isSending (both will not have to be true at a time), otherwise you end up with the error.
+We can use isSent and isSending, but it leaves the door open for the error.
+
+To solve this thing or the better way to handle this situation is - we can use Status State and passing their variables three valid status, like:
+
+Const [status, setStatus] = useState(isTyping); // isSending, isSent
+
+. Avoid Redundant State:
+
+Simple means to not use those states that are not needed.
+
+For example, we have two states; one for getting updated with firstName and second state for secondName. Now what if we use another state for completeName? Yup, it’s a bad idea.
+
+We can instead calculate the full name from the firstName state value and secondName during render, we don’t need to use another state for getting a complete name.
+
+. Avoid Duplication State:
+
+Let’s imagine you have two states, one is for items, another is for selectedItems.
+
+And you are storing the selected item object in the selectedItem state variable, that is not great.
+
+Instead we can use the selectedID, that does not duplicate the whole object but provides us the selected item id so we can fetch selected id data from the item - simple and best.
+
+. Avoid Deeply Nested State:
+
+Updating the nested State causes duplication everytime. Solution is to give each parent an array of its child ID.
+
+**Sharing State Between Components:**
+
+The question/problem is, how to change the state of two components together - if I want to make “child A” state variable isActive True, the second component variable isActive needs to False, they both do not True at a time. How to solve this?
+
+We can do this by Lifting State up. 
+
+Remove state from the components. Find the closest parent of both components and declare the state in it. Use the props to pass the value from parents to childs. Instead of sending boolean values use index 0 and 1. When the index is 0, child A is active and when the index is 1, child B is active.
