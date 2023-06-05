@@ -125,7 +125,7 @@ in which I learned about the Routes.
 
 **31th May**
 
-**1st May**
+**1st JUN**
 
 **Why Do We Need to Use the REACT STATE?**
 
@@ -198,3 +198,7 @@ The question/problem is, how to change the state of two components together - if
 We can do this by Lifting State up. 
 
 Remove state from the components. Find the closest parent of both components and declare the state in it. Use the props to pass the value from parents to childs. Instead of sending boolean values use index 0 and 1. When the index is 0, child A is active and when the index is 1, child B is active.
+
+**2nd JUN**
+Leanred 1st may topics more in deep.
+Also leanred about Preserving and Resetting State
