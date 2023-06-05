@@ -199,6 +199,12 @@ We can do this by Lifting State up.
 
 Remove state from the components. Find the closest parent of both components and declare the state in it. Use the props to pass the value from parents to childs. Instead of sending boolean values use index 0 and 1. When the index is 0, child A is active and when the index is 1, child B is active.
 
-**2nd JUN**
+**2nd JUNE**
 Leanred 1st may topics more in deep.
 Also leanred about Preserving and Resetting State
+
+**3rd JUNE**
+The problem with passing props
+What is context API
+Why we Need Context API
+Common alternatives to context
