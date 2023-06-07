@@ -208,3 +208,7 @@ The problem with passing props
 What is context API
 Why we Need Context API
 Common alternatives to context
+
+**6th JUNE**
+Have seen a bug where I fetched API many times at a time. To solve this problem I use useEffect with no dependency.
+Also I use useState to store the data instead of local variable - I found local variable is not suitable fot this scenerio.
