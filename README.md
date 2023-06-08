@@ -250,3 +250,4 @@ LifeCycle for Class Based Components:
  I created a form and give some validation to it with old method. I release it looks very messy and increase the chances of bugs.
  TO tackle with this problem, I found Formik and YUP. 
  Formik provide us the builtin Utils, by using them we can intercept with the lifecycle. That's mean we don't need to use useEffect or useState. On other hand Yup is providing us the builtin validation functionality.
+I also used ContextApi in the form.
