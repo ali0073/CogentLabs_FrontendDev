@@ -211,5 +211,42 @@ Common alternatives to context
 Practice of Context API
 
 **6th JUNE**
-Have seen a bug where I fetched API many times at a time. To solve this problem I use useEffect with no dependency.
-Also I use useState to store the data instead of local variable - I found local variable is not suitable fot this scenerio.
+Have seen a bug where I fetched API many times at a time. To solve this problem I use useEffect with empty dependency.
+Also I use useState to store the data instead of local variable - I found local variable is not suitable for this scenerio.
+
+**7th JUNE**
+
+LifeCycle for Class Based Components:
+ In React lifecycle, there are three categories, from which every component have to gone through.
+
+ 1. Mounting - Birth of component
+ 2. Updating - Growth of component
+ 3. UnMounting - Death of component
+
+ Mounting: 
+ The constructor first execute and then the getDerivedStateFromProps method will call. After that the render method will execute.
+ At the end, the componentDidMount method call.
+
+ Updating:
+ Whenever any component updated, this is the category to which it have to gone through...
+ firstly, getDerivedStateFromProps method will execute and check for any props update. Then, shouldComponentUpdate execute - like either it render the update or not.
+ If yes, then it take the snapshot from virtual DOM and compare it with previous DOM and will update the changes by calling ComponentDidUpdate.
+
+ UnMounting:
+ In this catogory. ComponentWillUnmount empty the component from cycle.
+
+
+
+ LifeCycle for Function Based Components:
+ FBC have to gone through from the same lifecycle but there are some twist.
+
+ In Mounting, the Function Component will render wihtout having intercept with Contructor and getDerivedFromProps. At the end, the componentDidMount method is called.
+ In Updating, the FC will call shouldComponentUpdate - like either FC render or not, if yes then getSnapshotBeforeUpdate execute and campare it with previous DOM. At the end ComponentDidUpdate call.
+ In UnMounting, ComponentWillUnmount empty the component from cycle.
+
+
+ After that...
+
+ I created a form and give some validation to it with old method. I release it looks very messy and increase the chances of bugs.
+ TO tackle with this problem, I found Formik and YUP. 
+ Formik provide us the builtin Utils, by using them we can intercept with the lifecycle. That's mean we don't need to use useEffect or useState. On other hand Yup is providing us the builtin validation functionality.
