@@ -251,3 +251,16 @@ LifeCycle for Class Based Components:
  TO tackle with this problem, I found Formik and YUP. 
  Formik provide us the builtin Utils, by using them we can intercept with the lifecycle. That's mean we don't need to use useEffect or useState. On other hand Yup is providing us the builtin validation functionality.
 I also used ContextApi in the form.
+
+**8th JUNE**
+created a basic application - fetch the API and practise with routing 6
+
+**9th JUNE**
+Started a project (VenLife) - that has many nested routes.
+
+**12th JUNE**
+Completed the routing of started project and some basic design
+
+**13th JUNE**
+Designed all pages and added some filters for the van list component.
+Deployed project through Netlify.
